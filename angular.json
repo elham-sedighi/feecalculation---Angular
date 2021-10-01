@@ -104,5 +104,8 @@
       }
     }
   },
-  "defaultProject": "Gini"
+  "defaultProject": "Gini",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }

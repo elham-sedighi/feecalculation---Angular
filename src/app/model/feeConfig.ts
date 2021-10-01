@@ -2,13 +2,13 @@ import {OperationDetail} from "./operationDetail";
 
 export interface FeeConfig {
   percents: number,
-  max?: OperationDetail,
-  min?: OperationDetail,
   week_limit?: OperationDetail
+  min?: OperationDetail,
+  max?: OperationDetail
 }
 
-export interface feeConfigs {
-  cash_out_natural: FeeConfig,
-  cash_out_juridical: FeeConfig,
-  cash_in: FeeConfig
+export enum FeeConfigType {
+  cashIn = 'cashIn',
+  cashOutNatural = 'cashOutNatural',
+  cashOutJuridical = 'cashOutJuridical'
 }
